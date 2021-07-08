@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.input-search,
+.input-burger{
+    display:none;
+}

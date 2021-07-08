@@ -1,0 +1,36 @@
+.burger{
+    flex-direction: column;
+    height: $sizeCoub;
+    min-width: $sizeCoub;
+    padding: 11px;
+    
+    span{
+        width: 20px;
+        height:2px;
+        background-color: $color-Black;
+        display: block;
+        border-radius: 2px;
+    }
+    span:first-child{
+        margin-bottom: 5px;
+    }
+    span:last-child{
+        width: 14px;
+    }
+
+    @media (max-width:1024px){
+        padding:5px;
+    }
+    @media (max-width:768px){
+        span{
+            width: 16px;
+            background-color: $mainColour;
+        }
+        span:first-child{
+            margin-bottom: 3px;
+        }
+        span:last-child{
+            width: 10px;
+        }
+    }
+}

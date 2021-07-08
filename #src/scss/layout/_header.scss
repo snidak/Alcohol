@@ -1,0 +1,147 @@
+.header{
+    display:flex;
+    flex-direction:column;
+    &__btn{
+        min-width: 45px;
+        height:45px;
+        border-radius:14px;
+        background-color: $bg-White;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    .logo{
+        width:10%;
+        &__img{
+            width: 103px;
+            height:47px;
+        }
+    }
+    &__link{
+        font-family: $Gilroy;
+        font-size: 12px;
+        line-height: 124.18%;
+        text-align: center;
+        color: $color-Black;
+        text-decoration: none;
+        font-weight: 500;
+        &--bold{
+            font-weight: 700;
+        }
+    }
+}
+.header-top{
+    background-color: $bg-SmokyWhite;
+    padding:13px 0;
+    max-height: 77px;
+    .container{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+    }
+}
+.header-left{
+    width: 40%;
+    display:flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+.header-right{
+    width: 40%;
+    display:flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+.login-block{
+    margin-right: 8px;
+    &__link{
+        padding: 4px 10px;
+        &:not(:last-child){
+            border-right: 1px solid #D0D0D0;
+        }
+    }
+}
+.search-btn{
+    padding:15px 15px 14px 14px;
+    margin-right: 18px;
+}
+.basket{
+    padding:15px 15px 15.5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    &__price{
+        margin-left: 13px;
+    }
+    &--full{
+        position: relative;
+        &::after{
+            content:"";
+            background: #FF8787;
+            border: 2px solid #EDEDED;
+            box-sizing: border-box;
+            border-radius: 14px;
+            width: 13px;
+            height: 13px;
+            position: absolute;
+            top: -2px;
+            right: -2px;
+        }
+    }
+}
+@media (max-width:1024px){
+    .header-right,
+    .header-left{
+        width:auto;
+    }
+    .header{
+        &-top{
+            padding: 10px 0;
+        }
+        .logo{
+            width: auto;
+            &__img{
+                height:35px;
+                width: auto;
+            }
+        }
+        .login-block{
+            display: none;
+        }
+        &__btn{
+            min-width: 40px;
+            height: 40px;
+            border-radius:9px;
+        }
+        .search-btn{
+            padding:5px;
+        }
+        .basket{
+            padding:5px 10px 5px 8px;
+        }
+    }
+}
+@media (max-width:768px){
+    .header{
+        &-top{
+            padding: 9px 15px;
+        }
+        &__btn{
+            min-width: 30px;
+            height: 30px;
+            border-radius:5px;
+        }
+        .search-btn, 
+        .basket__price{
+            display:none;
+        }
+        .basket__svg{
+            path:not(:last-child){
+                fill: $mainColour;
+            }
+            path:last-child{
+                stroke: $mainColour;
+            }
+        }
+    }
+}
