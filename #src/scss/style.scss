@@ -1,4 +1,11 @@
-@import 'layout/_*.scss';
-@import 'layout/_*.scss';
 
+@import 'abstracts/mixin.scss';
+@import 'abstracts/variables.scss';
 
+@import 'base/*.scss';
+
+@import 'components/*.scss';
+
+@import 'layout/*.scss';
+
+@import 'pages/*.scss';
