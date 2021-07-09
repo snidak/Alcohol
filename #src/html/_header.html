@@ -1,7 +1,6 @@
 <header class="header">
     <div class="header-top">
         <div class="container">
-
             <div class="header-left">
                 <input class="input-burger" id="burger" type="radio">
                 <label class="burger header__btn" for="burger">
@@ -11,11 +10,9 @@
                     </div>
                 </label>
             </div>
-
             <a href="/" class="logo">
                 <img class="logo__img" src="img/images/logo.png" alt="Logotype">
             </a>
-
             <div class="header-right">
 
                 <div class="login-block">
@@ -25,9 +22,9 @@
 
                 <input class="input-search" id="search" type="radio">
                 <label class="search-btn header__btn" for="search">
-                    <svg class="search__svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.84442 13.8368C11.1539 13.8368 13.8368 11.1539 13.8368 7.84442C13.8368 4.53493 11.1539 1.85205 7.84442 1.85205C4.53493 1.85205 1.85205 4.53493 1.85205 7.84442C1.85205 11.1539 4.53493 13.8368 7.84442 13.8368Z" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M12.0122 12.3235L14.3615 14.6668" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg class="search-btn__svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.84442 13.8368C11.1539 13.8368 13.8368 11.1539 13.8368 7.84442C13.8368 4.53493 11.1539 1.85205 7.84442 1.85205C4.53493 1.85205 1.85205 4.53493 1.85205 7.84442C1.85205 11.1539 4.53493 13.8368 7.84442 13.8368Z"  stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.0122 12.3235L14.3615 14.6668" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </label>
                
@@ -39,9 +36,63 @@
                     </svg>
                     <div class="basket__price header__link header__link--bold">40,25$</div>
                 </a>
-
             </div>
-            
         </div>
+    </div>
+    <div class="header-bottom container">
+        <nav class="navbar">
+            <ul class="navbar__items">
+                <input class="input-navbar-nested" id="navbar-nested__first" type="checkbox" >
+                <label class="navbar__item header__link navbar-nested" for="navbar-nested__first">Whiskey
+                    <ul class="navbar-nested__items">
+                        <li class="navbar-nested__item"><a href="#" class="header__link">Malt Whisky</a></li>
+                        <li class="navbar-nested__item"><a href="#" class="header__link">Grain Whisky</a></li>
+                        <li class="navbar-nested__item"><a href="#" class="header__link">Blended Whisky</a></li>
+                        <li class="navbar-nested__item"><a href="#" class="header__link">Blended Whisky</a></li>
+                        <li class="navbar-nested__item"><a href="#" class="header__link">Grain Whisky</a></li>
+                    </ul>
+                </label>
+                <li class="navbar__item header__link"><a href="#">Tequila</a></li>
+                <li class="navbar__item header__link"><a href="#">Vodka</a></li>
+                <li class="navbar__item header__link"><a href="#">Gin</a></li>
+                <input class="input-navbar-nested" id="navbar-nested__second" type="checkbox" >
+                <label class="navbar__item header__link navbar-nested" for="navbar-nested__second">Cognac & Brandy
+                    <ul class="navbar-nested__items">
+                        <li class="navbar-nested__item"><a href="#" class="header__link">Malt Whisky</a></li>
+                        <li class="navbar-nested__item"><a href="#" class="header__link">Grain Whisky</a></li>
+                        <li class="navbar-nested__item"><a href="#" class="header__link">Blended Whisky</a></li>
+                        <li class="navbar-nested__item"><a href="#" class="header__link">Grain Whisky</a></li>
+                        <li class="navbar-nested__item"><a href="#" class="header__link">Malt Whisky</a></li>
+                        <li class="navbar-nested__item"><a href="#" class="header__link">Grain Whisky</a></li>
+                        <li class="navbar-nested__item"><a href="#" class="header__link">Blended Whisky</a></li>
+                        <li class="navbar-nested__item"><a href="#" class="header__link">Grain Whisky</a></li>
+                    </ul>
+                </label>
+                <li class="navbar__item header__link"><a href="#">Rum</a></li>
+                <input class="input-navbar-nested" id="navbar-nested__tree" type="checkbox" >
+                <label class="navbar__item header__link navbar-nested" for="navbar-nested__tree">Liqueur & More
+                    <ul class="navbar-nested__items">
+                        <li class="navbar-nested__item"><a href="#" class="header__link">Malt Whisky</a></li>
+                        <li class="navbar-nested__item"><a href="#" class="header__link">Grain Whisky</a></li>
+                        <li class="navbar-nested__item"><a href="#" class="header__link">Blended Whisky</a></li>
+                        <li class="navbar-nested__item"><a href="#" class="header__link">Blended Whisky</a></li>
+                        <li class="navbar-nested__item"><a href="#" class="header__link">Grain Whisky</a></li>
+                    </ul>
+                </label>
+                <li class="navbar__item header__link"><a href="#">Champagne</a></li>
+                <li class="navbar__item header__link"><a href="#">Wine</a></li>
+
+                <input class="input-navbar-nested" id="navbar-nested__more" type="checkbox" >
+                <label class="navbar__item header__link navbar-nested navbar-nested--mobil" for="navbar-nested__more">More
+                    <ul class="navbar-nested__items">
+                        <li class="navbar-nested__item"><a href="#" class="header__link">Champagne</a></li>
+                        <li class="navbar-nested__item"><a href="#" class="header__link">Wine</a></li>
+                        <li class="navbar-nested__item"><a href="#" class="header__link">Vodka</a></li>
+                        <li class="navbar-nested__item"><a href="#" class="header__link">Gin</a></li>
+                        <li class="navbar-nested__item"><a href="#" class="header__link">Tequila</a></li>
+                    </ul>
+                </label>
+            </ul>
+        </nav>
     </div>
 </header>

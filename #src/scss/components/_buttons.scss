@@ -3,13 +3,14 @@
     height: $sizeCoub;
     min-width: $sizeCoub;
     padding: 11px;
-    
+    cursor: pointer;
     span{
         width: 20px;
         height:2px;
         background-color: $color-Black;
         display: block;
         border-radius: 2px;
+        transition: background .3s;
     }
     span:first-child{
         margin-bottom: 5px;
@@ -17,7 +18,9 @@
     span:last-child{
         width: 14px;
     }
-
+    &:hover span{
+        background-color: $mainColour;
+    }
     @media (max-width:1024px){
         padding:5px;
     }

@@ -1,6 +1,10 @@
 *{
     box-sizing: border-box;
 }
+a{
+    color: $color-Black;
+    text-decoration: none;
+}
 .wrapper{
     display:grid;
     grid-template-rows: auto 1fr auto;
@@ -12,6 +16,7 @@
     margin: 0 auto;
 }
 .input-search,
-.input-burger{
+.input-burger,
+.input-navbar-nested{
     display:none;
 }
