@@ -26,8 +26,18 @@
     }
     @media (max-width:768px){
         span{
+            width: 18px;
+        }
+        span:first-child{
+            margin-bottom: 4px;
+        }
+        span:last-child{
+            width: 12px;
+        }
+    }
+    @media (max-width:375px){
+        span{
             width: 16px;
-            background-color: $mainColour;
         }
         span:first-child{
             margin-bottom: 3px;
