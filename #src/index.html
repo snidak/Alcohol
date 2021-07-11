@@ -3,8 +3,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="css/main.min.css">
 		<title>Gulp</title>
+
+		
+
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -12,10 +17,13 @@
 			@@include('html/_header.html')
 
 			<main class="main">
+				@@include('html/_intro.html')
 			</main>
 			
 			@@include('html/_footer.html')
 		</div>
-		<script src="js/script.min.js"></script>
+		
+		<script src="https://unpkg.com/imask"></script>
+		<script type="module" src="js/script.js"></script>
 	</body>
 </html>

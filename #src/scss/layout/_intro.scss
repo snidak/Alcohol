@@ -1,0 +1,215 @@
+.intro{
+    min-width: 0;
+    padding: 0;
+    width:100%;
+    margin-bottom: 60px;
+}
+.swiper-container {
+    min-width: 0;
+  }
+.intro-swiper{
+    height:520px;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    border-radius:60px;
+}
+.swiper-wrapper{
+    height:100%;
+    min-width: 0;
+}
+.intro-swiper__slide{
+    height:100%;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    &:last-child{
+        border-radius: 0 60px 60px 0;
+    }
+    &:first-child{
+        border-radius: 60px 0 0 60px; 
+    }
+}
+.intro-swiper__bg{
+    height:100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding:60px 81px;
+}
+.intro__title{
+    margin:0;
+    max-width: 75%;
+}
+.intro__title a{
+    font-family: $Gilroy;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 124.18%;
+    color: $color-White;
+    margin-bottom: 1px;
+}
+.intro__subtitle{
+    font-family: $Yorkten;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 37px;
+    line-height: 124.18%;
+    color: #FFFFFF;
+    cursor: default;
+
+    max-width: 60%;
+}
+.intro-scrollbar{
+    position: absolute;
+    bottom: 63px;
+    left: 81px;
+    z-index: 5;
+    width: 10%;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+.intro-pagination{
+    
+}
+.intro__counter--active{
+    position: absolute;
+    left: -30px;
+    top: -6px;
+}
+.intro__counter--last{
+    position: absolute;
+    right: -30px;
+    top: -6px;
+}
+.intro-swiper .intro-scrollbar__block{
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    position: relative;
+}
+.intro__counter{
+    margin: 0 6px;
+    font-family: $Gilroy;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 124.18%;
+    color: #FFFFFF;
+}
+.swiper-scrollbar-drag{
+    height:9px;
+    width: 9px !important;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    top: -3px;
+    left: 0;
+}
+
+@media(max-width:1200px){
+    .intro-swiper__slide:first-child,
+    .intro-swiper__slide:last-child,
+    .intro-swiper{
+        border-radius: 0;
+    }
+    
+}
+@media(max-width:1024px){
+    .intro{
+        margin-bottom: 45px;
+    }
+    .intro-swiper__bg{
+        padding: 45px;
+    }
+    .intro__title a{
+        font-size: 48px;
+    }
+    .intro__subtitle{
+        font-size: 34px;
+    }
+}
+@media(max-width:768px){
+    .intro{
+        margin-bottom: 40px;
+    }
+    .intro-swiper{
+        height:420px;
+    }
+    .intro-swiper__bg{
+        text-align: center;
+        align-items: center;
+    }
+    .intro-scrollbar{
+        width: 20%;
+    }
+    .intro__title{
+        max-width:100%;
+    }
+    .intro__title a{
+        font-size: 44px;
+    }
+    .intro__subtitle{
+        font-size: 30px;
+    }
+}
+@media(max-width:435px){
+    .intro{
+        margin-bottom: 30px;
+    }
+    .intro-swiper{
+        height:300px;
+    }
+    .intro__title a{
+        font-size: 28px;
+    }
+    .intro__subtitle{
+        font-size: 20px;
+    }
+    .intro-scrollbar{
+        bottom: 32px;
+        left: 56px;
+        width: 35%;
+    }
+}
+@media(max-width:375px){
+    .intro{
+        margin-bottom: 20px;
+    }
+    .intro-swiper{
+        width: 90%;
+        border-radius: 10px;
+        height:160px;
+    }
+    .intro__counter{
+        font-size:12px;
+    }
+    .intro-swiper__slide:first-child{
+        border-radius: 10px 0 0 10px;
+    }
+    .intro-swiper__slide:last-child{
+        border-radius:  0 10px 10px 0;
+    }
+    .intro-swiper__bg{
+        padding:14px 19px;
+        justify-content: flex-start;
+        text-align: left;
+        align-items: flex-start;
+    }
+    .intro__title a{
+        font-size: 24px;
+    }
+    .intro__subtitle{
+        font-size: 14px;
+    }
+    .intro-scrollbar{
+        bottom: 26px;
+        left: 40px;
+        width: 35%;
+    }
+}

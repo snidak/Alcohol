@@ -1,0 +1,274 @@
+input[type=search]::-ms-clear {
+    display: none;
+}
+textarea{
+    border: 1px solid #ECECEC;
+    background-color: #F6F7F9;
+    border-radius: 15px;
+    padding:17px 15px 16px 15px;
+    font-family: $Banana;
+    font-size: 14px;
+    line-height: 124.18%;
+    font-weight: 600;
+    color: #000000;
+    width: 100%;
+    resize:none;
+    scrollbar-width: none;
+    &:-webkit-scrollbar { width: 0; }
+    & { -ms-overflow-style: none; }
+    & { overflow: -moz-scrollbars-none; }
+    &::-webkit-scrollbar { 
+        display: none; 
+    }
+    &:focus{
+        outline: none;
+        border: 1px solid $accentColour;
+    }
+}
+.form__item{
+    position: relative;
+    width:100%;
+    text-align: left;
+}
+.form__input{
+    width: 100%;
+    padding: 25px 15px 10px 15px;
+    height: 52px;
+    font-family: $Gilroy;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 124.18%;
+    color: #000000;
+    border: 1px solid #ECECEC;
+    background-color: #F6F7F9;
+    border-radius: 15px;
+    width: 100%;
+    transition: all .4s;
+    
+
+    &:hover{
+        background-color: $bg-LigthSmokyWhite;
+    }
+
+    &:focus{
+        outline: none;
+        border: 1px solid $accentColour;
+    }
+    
+    &:valid{
+        border: 1px solid $color-DarTurquoise;
+    }
+    &:focus ~ .form__label, 
+    &:not(:focus):valid ~ .form__label{
+        top: -9px;
+        font-size: 11px;
+    }
+   
+}
+.invalid{
+    border: 1px solid #FF0000;
+
+    & ~ .form__label{
+        top: -9px;
+        font-size: 11px;
+    }
+}
+.form__label{
+    font-family: $Banana;
+    font-size: 14px;
+    line-height: 124.18%;
+    font-weight: 400;
+    color: #89898B;
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    right: 15px;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 52px;
+    transition: .3s;
+}
+
+
+.btn{
+    font-family: $Gilroy;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 124.18%;
+    text-align: center;
+
+    cursor: pointer;
+    transition: all .4s;
+    box-shadow: none;
+    text-shadow: none;
+    
+    min-width: 90px;
+    border-radius:15px;
+    padding: 17px 10px 16px;
+    
+    color: $color-Black;
+    border: 1px solid #E0E0E0;
+    background-color: $bg-White;
+    &:hover{
+        background-color: $bg-SmokyWhite;
+    }
+    &:active{
+        outline: none;
+        background-color: $bg-White;
+        color: $accentColour;
+        border: 1px solid $accentColour;
+    }
+    &:focus{
+        outline: none;
+        background-color: $bg-White;
+        color: $accentColour;
+        border: 1px solid $accentColour;
+    }
+    &--accent{
+        background-color: $accentColour;
+        color: $color-White;
+        border: 1px solid transparent;
+        &:hover{
+            color: $color-White;
+            background-color: #ce6d28;
+        }
+        &:active{
+            color: $color-White;
+            background-color: #f8802a;
+        }
+        &:focus{
+            background-color: #f8802a;
+            color: $color-White;
+            border: 1px solid $color-GreenishBlack;
+        }
+    }
+    &--edit{
+        min-width: auto;
+        border-radius:8px;
+        padding: 7.4px 13px 4.3px;
+        font-weight: 600;
+        color: #377DFF;
+        border: 1px solid #377DFF;
+        background-color: #fff;
+        text-transform: uppercase;
+    
+        &:hover{
+            background-color: $bg-LigthSmokyWhite;
+        }
+        &:active{
+            background-color: $bg-White;
+            border: 1px solid $accentColour;
+        }
+        &:focus{
+            color: $accentColour;
+            border: 1px solid $accentColour;
+        }
+    }
+    &--outline{
+        font-weight: 600;
+        border-radius: 10px;
+        border: 1px solid $mainColour;
+        padding: 14px 28px 14px 29px;
+
+        &:hover{
+            color: $color-White;
+            background-color: $mainColour;
+        }
+        &:active{
+            color: $color-White;
+            background-color: $mainColour;
+            border: 1px solid transparent;
+        }
+        &:focus{
+            color: $color-White;
+            background-color: rgba($mainColour, 0.9);
+            border: 1px solid transparent;
+        }
+    }
+    &--red{
+        font-weight: 500;
+        border-radius: 10px;
+        border: 1px solid #FF0000;
+        font-size: 16px;
+        padding: 16px 30px;
+        color: #FF0000;
+        background-color: $bg-White;
+        &:hover{
+            color: #FF0000;
+            background-color: $bg-LigthSmokyWhite;
+        }
+        &:active{
+            color: #FF0000;
+            background-color: $bg-SmokyWhite;
+            border: 1px solid transparent;
+        }
+        &:focus{
+            color: $color-White;
+            background-color: #FF0000;
+            border: 1px solid transparent;
+        }
+    }
+}
+//radio and checkbox
+.input-radio,
+.input-checkbox{
+    display: none;
+}
+.label-radio{
+    width: 18px;
+    height: 18px;
+    background: #F6F7F9;
+    border: 1px solid #CACACA;
+    border-radius: 6px;
+
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    cursor: pointer;
+    &:hover &__span{
+        opacity: 0.1;
+    }
+    &__span{
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+        background-color: $mainColour;
+        transition: opacity .4s;
+        opacity: 0;
+    }
+}
+.input-radio:checked + .label-radio > .label-radio__span{
+    opacity: 1;
+}
+.label-checkbox{
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border:1px solid #CACACA;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    transition: all .4s;  
+    &__svg{
+        transition: all .4s;  
+        opacity: 0;
+        fill:#125E5C;
+    }
+
+    &--grey{
+        width: 20px;
+        height: 20px;
+        border:1px solid transparent;
+        border-radius: 3px;
+        background-color: #8D9293;
+        & > .label-checkbox__svg{
+            fill: #ffffff;
+        }
+    }
+}
+.input-checkbox:checked + .label-checkbox > .label-checkbox__svg{
+    opacity: 1;
+}

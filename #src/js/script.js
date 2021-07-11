@@ -12,3 +12,8 @@ testWebP(function (support) {
 		document.querySelector('html').classList.add('_no-webp');
 	}
 });
+
+
+
+@@include("valid.js");
+@@include("swiper.js");

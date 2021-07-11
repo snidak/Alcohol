@@ -23,3 +23,16 @@ a{
 details summary::-webkit-details-marker {
     display:none;
 }
+.main{
+    min-width: 0;
+}
+.main form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+
+    input{
+        margin-bottom: 10px;
+    }
+}
